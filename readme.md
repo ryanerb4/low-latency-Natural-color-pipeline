@@ -26,7 +26,7 @@ export PC_SAS_TOKEN="sv=2023‑05‑30&ss=bfqt&srt=co&sp=rl&se=2025‑07‑07T16
 
 ```bash
 # 1.  Install deps (venv or conda recommended)
-pip install -r requirements_natural.txt
+pip install -r requirements.txt
 
 # 2.  Download latest clear RGB over Jordanelle Reservoir, Utah
 python natural_color_downscaler.py   --aoi "POINT (-111.152 40.684)"   --date 2025-06-07   --max-cloud 15   --pansharpen   --webp   --out jordanelle_rgb.tif
@@ -69,7 +69,7 @@ jordanelle_rgb.webp  # 8‑bit preview (≈200 KB)
 
 ## 📦 Requirements
 
-See `requirements_natural.txt`.
+See `requirements.txt`.
 
 Core: `pystac-client`, `planetary-computer`, `rioxarray`, `xarray`, `rasterio`, `numpy`, `shapely`, `pillow`, `tqdm`.
 
